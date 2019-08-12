@@ -36,3 +36,8 @@
 |Command| Description|
 |-------|------------|
 |`docker volume create name` | TBD |
+
+# Docker Logs
+|Command| Description|
+|-------|------------|
+|`docker logs container-name/container-id` | TBD |
