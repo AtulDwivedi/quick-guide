@@ -7,8 +7,8 @@
 # Kafka Server
 |Command| Description|
 |-------|------------|
-|`bin/kafka-server-start.sh config\server.properties`|Starts kafka server|
-|`bin/kafka-server-stop.sh config\server.properties`|Stops kafka server|
+|`bin/kafka-server-start.sh config/server.properties`|Starts kafka server|
+|`bin/kafka-server-stop.sh config/server.properties`|Stops kafka server|
 
 # Kafka Topic
 |Command| Description|
