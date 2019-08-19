@@ -32,7 +32,8 @@
 # Docker Network
 |Command| Description|
 |-------|------------|
-|`docker network create name` | TBD |
+|`docker network create network-name` | Create a network |
+|`docker network inspect network-name`|  Display detailed information on one or more networks|
 
 # Docker Volume
 |Command| Description|
