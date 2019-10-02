@@ -1,7 +1,7 @@
 # Conda Commands
 |Command| Description|
 |-------|------------|
-|`conda -v` | Prints conda's version|
+|`conda -V` | Prints conda's version|
 |`conda -h` | Prints conda's help|
 |`conda create --name env_name python`  | Creates env_name environment for python|
 |`conda info --envs`  | List all the environments|
