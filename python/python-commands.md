@@ -4,9 +4,12 @@
 |-------|------------|
 |`python -V`  | Prints **python version** |
 |`python quit()`  | Quits **python** |
-|`python manager.py startapp app_name`  | Creates app_name Django app|
-|`python manager.py runserver`  | Starts the server|
 
+# Python manage.py Commands (for django)
+|Command| Description|
+|-------|------------|
+|`python manage.py runserver`  | Starts the server|
+|`python manage.py startapp app_name`  | Creates app_name Django app|
 
 # Python PIP (package manager for python)
 |Command| Description|
