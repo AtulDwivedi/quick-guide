@@ -1,5 +1,5 @@
 
-# Django Admin Commands
+# Python Commands
 |Command| Description|
 |-------|------------|
 |`python -V`  | Prints **python version** |
