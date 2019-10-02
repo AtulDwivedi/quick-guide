@@ -9,7 +9,3 @@
 |`conda activate env_name`  | Activates env_name environment|
 |`conda deactivate`  | Deactivates current environment|
 |`conda install django`  | Installs Django in active environment|
-|`pip install sqlparse`  | Installs sqlparse in active environment|
-|`django-admin startproject project_name`  | Creates project_name Django project|
-|`python manager.py startapp app_name`  | Creates app_name Django app|
-|`python manager.py runserver`  | Starts the server|
