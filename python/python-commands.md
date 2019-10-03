@@ -13,6 +13,7 @@
 |`python manage.py migrate`  | Applyies all migrations |
 |`python manage.py makemigrations first_app`  | ---|
 |`python manage.py shell`  | ---|
+|`python manage.py createsuperuser`  | Creates supser user |
 
 # Python PIP (package manager for python)
 |Command| Description|
