@@ -19,3 +19,4 @@
 |Command| Description|
 |-------|------------|
 |`pip install sqlparse`  | Installs sqlparse in active environment|
+|`pip install Faker`  | Installs faker library |
