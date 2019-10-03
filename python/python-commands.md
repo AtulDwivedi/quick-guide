@@ -12,6 +12,7 @@
 |`python manage.py startapp app_name`  | Creates app_name Django app|
 |`python manage.py migrate`  | Applyies all migrations |
 |`python manage.py makemigrations first_app`  | ---|
+|`python manage.py shell`  | ---|
 
 # Python PIP (package manager for python)
 |Command| Description|
