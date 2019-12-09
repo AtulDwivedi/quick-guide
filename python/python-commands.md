@@ -20,3 +20,5 @@
 |-------|------------|
 |`pip install sqlparse`  | Installs sqlparse in active environment|
 |`pip install Faker`  | Installs faker library |
+|`pip install bcrypt`  | Installs encryption library |
+|`pip install django[argon2]`  | Installs argon2 library |
