@@ -1,3 +1,9 @@
+# Git Important commands
+|Command| Description|
+|-------|------------|
+|`git --version`|Returns Git version|
+|`git --help`|Returns Git commands used in various situations|
+
 # GIT Commands
 |Command| Description|
 |-------|------------|
