@@ -28,6 +28,8 @@
 |docker image rm <image id> | Remove specified image from this machine| 
 |docker image rm $(docker image ls -a -q) | Remove all images from this machine| 
 |` docker image rm $(docker image ls -aq)`||
+|`docker tag api-gateway-service:latest routinecart.azurecr.io/api-gateway-service:latest`| Tag docker image |
+|`docker push routinecart.azurecr.io/api-gateway-service:latest`| Push docker image |
   
 # Docker Network
 |Command| Description|
