@@ -8,9 +8,6 @@
   * [Conda official references](conda/conda-references.md)
 * [django](django/README.md)
   * [Django Admin Commands](django/django-commands.md)
-* [docker](docker/README.md)
-  * [docker-commands](docker/docker-commands.md)
-  * [docker-references](docker/docker-references.md)
 * [git](git/README.md)
   * [git-commands](git/git-commands.md)
 * [homebrew](homebrew/README.md)
@@ -23,6 +20,11 @@
   * [python-references](python/python-references.md)
 * [windows](windows/README.md)
   * [windows-commands](windows/windows-commands.md)
+
+## Docker
+
+* [Docker Commands](docker/docker-commands.md)
+* [Docker References](docker/docker-references.md)
 
 ## Azure
 

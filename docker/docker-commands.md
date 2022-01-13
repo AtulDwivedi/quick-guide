@@ -1,28 +1,28 @@
-# docker-commands
+# Docker Commands
 
 ## Docker
 
-| Command                                | Description                                           |
-| -------------------------------------- | ----------------------------------------------------- |
-| `docker build -t friendlyhello .`      | Create image using this directory's Dockerfile        |
-| `docker run -p 4000:80 friendlyhello`  | Run "friendlyhello" mapping port 4000 to 80           |
-| docker run -d -p 4000:80 friendlyhello | Same thing, but in detached mode                      |
-| docker login                           | Log in this CLI session using your Docker credentials |
-| docker tag  username/repository:tag    | Tag  for upload to registry                           |
-| docker push username/repository:tag    | Upload tagged image to registry                       |
-| docker run username/repository:tag     | Run image from a registry                             |
+| Command                                  | Description                                           |
+| ---------------------------------------- | ----------------------------------------------------- |
+| `docker build -t friendlyhello .`        | Create image using this directory's Dockerfile        |
+| `docker run -p 4000:80 friendlyhello`    | Run "friendlyhello" mapping port 4000 to 80           |
+| `docker run -d -p 4000:80 friendlyhello` | Same thing, but in detached mode                      |
+| `docker login`                           | Log in this CLI session using your Docker credentials |
+| `docker tag  username/repository:tag`    | Tag  for upload to registry                           |
+| `docker push username/repository:tag`    | Upload tagged image to registry                       |
+| d`ocker run username/repository:tag`     | Run image from a registry                             |
 
 ## Docker Container
 
-| Command                                          | Description                                  |
-| ------------------------------------------------ | -------------------------------------------- |
-| docker container ls                              | List all running containers                  |
-| docker container ls -a                           | List all containers, even those not running  |
-| docker container stop                            | Gracefully stop the specified container      |
-| docker container kill                            | Force shutdown of the specified container    |
-| docker container rm                              | Remove specified container from this machine |
-| docker container rm $(docker container ls -a -q) | Remove all containers                        |
-| `docker container rm $(docker container ls -aq)` |                                              |
+| Command                                        | Description                                 |
+| ---------------------------------------------- | ------------------------------------------- |
+| `docker ps`                                    | List all running containers                 |
+| `docker ps -a`                                 | List all containers, even those not running |
+| `docker stop <container-id \| container-name>` | Stops specified container                   |
+| `docker stop $(docker ps -aq)`                 | Stops all running containers                |
+| `docker rm <container-id \| container-name>`   | Removes specified container                 |
+| `docker rm $(docker ps -aq)`                   | Removes all running containers              |
+| `docker container kill`                        | Force shutdown of the specified container   |
 
 ## Docker Image
 
