@@ -14,21 +14,24 @@
 
 ## Docker Container
 
-### List Docker Containers
+**List Containers**
 
+<mark style="color:purple;">`docker ps`</mark>
 
+<mark style="color:purple;">`docker ps -a`</mark>
 
-List running containers
+<mark style="color:purple;">``</mark>
 
-```
-docker ps
-```
+**Stop Container(s)**
 
-List all containers
+<mark style="color:purple;">`docker stop <container-id(s) | container-name(s)>`</mark>
 
-```
-docker ps -a
-```
+Example:
+
+* `docker stop hello-world`
+* `docker stop hello-world, order-service, item-service`
+
+``
 
 | Command                                        | Description                                 |
 | ---------------------------------------------- | ------------------------------------------- |
