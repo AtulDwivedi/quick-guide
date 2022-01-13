@@ -14,6 +14,22 @@
 
 ## Docker Container
 
+### List Docker Containers
+
+
+
+List running containers
+
+```
+docker ps
+```
+
+List all containers
+
+```
+docker ps -a
+```
+
 | Command                                        | Description                                 |
 | ---------------------------------------------- | ------------------------------------------- |
 | `docker ps`                                    | List all running containers                 |
