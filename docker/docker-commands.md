@@ -1,6 +1,18 @@
 # Docker Commands
 
-## Docker
+## Docker Build
+
+
+
+<mark style="color:purple;">`docker build -t repository-name:version .`</mark>
+
+<mark style="color:purple;">`docker build -t repository-name:version -t username/repository-name:version .`</mark>
+
+Example:
+
+* `docker build -t myservice:latest .`
+* `docker build -t routinecart.azurecr.io/myservice:latest .`
+* `docker build -t myservice:latest -t routinecart.azurecr.io/myservice:latest .`
 
 | Command                                  | Description                                           |
 | ---------------------------------------- | ----------------------------------------------------- |
@@ -14,15 +26,13 @@
 
 ## Docker Container
 
-**List Containers**
+#### List Containers
 
 <mark style="color:purple;">`docker ps`</mark>
 
 <mark style="color:purple;">`docker ps -a`</mark>
 
-<mark style="color:purple;">``</mark>
-
-**Stop Container(s)**
+#### Stop Container(s)
 
 <mark style="color:purple;">`docker stop <container-id(s) | container-name(s)>`</mark>
 
@@ -31,17 +41,14 @@ Example:
 * `docker stop hello-world`
 * `docker stop hello-world, order-service, item-service`
 
-``
+#### Remove Container(s)
 
-| Command                                        | Description                                 |
-| ---------------------------------------------- | ------------------------------------------- |
-| `docker ps`                                    | List all running containers                 |
-| `docker ps -a`                                 | List all containers, even those not running |
-| `docker stop <container-id \| container-name>` | Stops specified container                   |
-| `docker stop $(docker ps -aq)`                 | Stops all running containers                |
-| `docker rm <container-id \| container-name>`   | Removes specified container                 |
-| `docker rm $(docker ps -aq)`                   | Removes all running containers              |
-| `docker container kill`                        | Force shutdown of the specified container   |
+<mark style="color:purple;">`docker rm <container-id(s) | container-name(s)>`</mark>
+
+Example:
+
+* `docker rm hello-world`
+* `docker rm hello-world, order-service, item-service`
 
 ## Docker Image
 
