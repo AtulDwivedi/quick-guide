@@ -2,27 +2,33 @@
 
 ## Docker Build
 
-
-
 <mark style="color:purple;">`docker build -t repository-name:version .`</mark>
 
-<mark style="color:purple;">`docker build -t repository-name:version -t username/repository-name:version .`</mark>
+<mark style="color:purple;">`docker build -t registry/repository-name:version .`</mark>
+
+<mark style="color:purple;">`docker build -t repository-name-1:version -t repository-name-2:version .`</mark>
 
 Example:
 
-* `docker build -t myservice:latest .`
-* `docker build -t routinecart.azurecr.io/myservice:latest .`
-* `docker build -t myservice:latest -t routinecart.azurecr.io/myservice:latest .`
+* `docker build -t my-service:latest .`
+* `docker build -t registry.azurecr.io/my-service:latest .`
+* `docker build -t my-service-1:1.0.0 -t my-service-2:1.0.0 .`
 
-| Command                                  | Description                                           |
-| ---------------------------------------- | ----------------------------------------------------- |
-| `docker build -t friendlyhello .`        | Create image using this directory's Dockerfile        |
-| `docker run -p 4000:80 friendlyhello`    | Run "friendlyhello" mapping port 4000 to 80           |
-| `docker run -d -p 4000:80 friendlyhello` | Same thing, but in detached mode                      |
-| `docker login`                           | Log in this CLI session using your Docker credentials |
-| `docker tag  username/repository:tag`    | Tag  for upload to registry                           |
-| `docker push username/repository:tag`    | Upload tagged image to registry                       |
-| d`ocker run username/repository:tag`     | Run image from a registry                             |
+## Docker Tag
+
+<mark style="color:purple;">`docker tag exiting-repository-name:version new-repository-name:version`</mark>
+
+Example:
+
+* `docker tag my-service:latest registry.azurecr.io/my-service:latest`
+
+## Docker Push
+
+<mark style="color:purple;">`docker push registry/new-repository-name:version`</mark>
+
+Example:
+
+* `docker push registry.azurecr.io/my-service:latest`
 
 ## Docker Container
 
@@ -35,6 +41,8 @@ Example:
 #### Stop Container(s)
 
 <mark style="color:purple;">`docker stop <container-id(s) | container-name(s)>`</mark>
+
+<mark style="color:purple;">`docker stop $(docker ps -aq)`</mark>
 
 Example:
 
@@ -52,14 +60,28 @@ Example:
 
 ## Docker Image
 
-| Command                                                                                   | Description                              |
-| ----------------------------------------------------------------------------------------- | ---------------------------------------- |
-| docker image ls -a                                                                        | List all images on this machine          |
-| docker image rm                                                                           | Remove specified image from this machine |
-| docker image rm $(docker image ls -a -q)                                                  | Remove all images from this machine      |
-| `docker image rm $(docker image ls -aq)`                                                  |                                          |
-| `docker tag api-gateway-service:latest routinecart.azurecr.io/api-gateway-service:latest` | Tag docker image                         |
-| `docker push routinecart.azurecr.io/api-gateway-service:latest`                           | Push docker image                        |
+#### List Images
+
+<mark style="color:purple;">`docker images`</mark>
+
+<mark style="color:purple;">`docker images -a`</mark>
+
+<mark style="color:purple;">`docker image ls`</mark>
+
+<mark style="color:purple;">`docker image ls -a`</mark>
+
+#### Remove Images(s)
+
+<mark style="color:purple;">`docker rmi <image-id(s) | image-name(s)>`</mark>
+
+<mark style="color:purple;">`docker rmi $(docker images -aq)`</mark>
+
+Example:
+
+* `docker rmi hello-world`
+* `docker rmi hello-world, order-service, 0706874044f0`
+
+## Docker Run
 
 ## Docker Network
 
