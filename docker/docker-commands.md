@@ -1,3 +1,7 @@
+---
+description: Some most frequently used Docker CLI commands
+---
+
 # Docker Commands
 
 ## Docker Build
@@ -79,21 +83,56 @@
 
 ## Docker Run
 
+#### <mark style="color:purple;">`docker run -d --name my-service`</mark><mark style="color:orange;">**`-p host's-port:container's-port`**</mark><mark style="color:purple;">`my-service`</mark>
+
+* `-d` or `--detach`: run container in detached/background mode and print container ID
+* `-p` or `--publish` : bind outbound port to inbound port outbound:inbound i.e. 80:8080
+* `--name` : assign a name to the container
+* `docker run -d --name my-service`**`-p 80:8080`**` ``my-service`
+
 ## Docker Network
 
-| Command                               | Description                                          |
-| ------------------------------------- | ---------------------------------------------------- |
-| `docker network create network-name`  | Create a network                                     |
-| `docker network inspect network-name` | Display detailed information on one or more networks |
+#### <mark style="color:purple;">`docker network create network-name`</mark>
+
+creates **bridge** type of network with name: network-name
+
+#### <mark style="color:purple;">`docker network create -d overlay network-name`</mark>
+
+* creates **overlay** type of network with name: network-name
+* if `-d` is not specified the default network type is **bridge**
+
+#### <mark style="color:purple;">`docker network ls`</mark>
+
+lists all the networks the Engine `daemon` knows about&#x20;
+
+#### <mark style="color:purple;">`docker network ls --no-trunc`</mark>
+
+lists all the networks with full network ID
+
+#### <mark style="color:purple;">`docker network inspect network1 [network2 network3 ...]`</mark>
+
+returns information about one or more networks
 
 ## Docker Volume
 
-| Command                     | Description |
-| --------------------------- | ----------- |
-| `docker volume create name` | TBD         |
+#### <mark style="color:purple;">`docker volume create hello`</mark>
+
+creates hello named **local** type of volume
+
+#### <mark style="color:purple;">`docker volume ls`</mark>
+
+lists all volumes
 
 ## Docker Logs
 
-| Command                                   | Description |
-| ----------------------------------------- | ----------- |
-| `docker logs container-name/container-id` | TBD         |
+#### <mark style="color:purple;">`docker logs CONTAINER`</mark>
+
+retrieves logs present at the time of execution
+
+#### <mark style="color:purple;">`docker logs -f CONTAINER`</mark>
+
+follows logs output
+
+#### <mark style="color:purple;">`docker logs --tail|-n CONTAINER`</mark>
+
+number of lines to show from the end of the logs
