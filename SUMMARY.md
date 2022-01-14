@@ -4,12 +4,12 @@
 
 ## Docker
 
-* [Docker Commands](docker/docker-commands.md)
+* [Docker CLI Commands](docker/docker-commands.md)
 * [Docker References](docker/docker-references.md)
 
 ## Azure
 
-* [Azure CLI](azure/azure-cli.md)
+* [Azure CLI Commands](azure/azure-cli-commands.md)
 
 ## Git
 
