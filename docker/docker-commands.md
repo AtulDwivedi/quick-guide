@@ -3,7 +3,7 @@ description: Some most frequently used Docker CLI commands
 coverY: -275.5061179087876
 ---
 
-# Docker Commands
+# Docker CLI Commands
 
 ## Docker Build
 
@@ -81,6 +81,20 @@ coverY: -275.5061179087876
 #### Remove all containers
 
 <mark style="color:purple;">`docker rm $(docker ps -aq)`</mark>
+
+#### Look what's happening inside container from <mark style="color:orange;">outside</mark>
+
+<mark style="color:purple;">`docker container top CONTAINER`</mark>
+
+<mark style="color:purple;">`docker container inspect CONTAINER`</mark>
+
+<mark style="color:purple;">`docker container stats CONTAINER [CONTAINER...]`</mark>
+
+#### Look what's happening inside container from <mark style="color:orange;">inside</mark>
+
+<mark style="color:purple;">`docker container run -it --name nginx -p 80:80 nginx bash`</mark>
+
+<mark style="color:purple;">`docker container run exec -it nginx bash`</mark>
 
 ## Docker Run
 
