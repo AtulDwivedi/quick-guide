@@ -96,6 +96,10 @@ coverY: -275.5061179087876
 
 <mark style="color:purple;">`docker container run exec -it nginx bash`</mark>
 
+#### <mark style="color:purple;">`docker container port CONTAINER`</mark>
+
+tells what ports are open
+
 ## Docker Run
 
 #### <mark style="color:purple;">`docker run -d --name my-service`</mark><mark style="color:orange;">**`-p host's-port:container's-port`**</mark><mark style="color:purple;">`my-service`</mark>
@@ -127,6 +131,14 @@ lists all the networks with full network ID
 #### <mark style="color:purple;">`docker network inspect network1 [network2 network3 ...]`</mark>
 
 returns information about one or more networks
+
+#### <mark style="color:purple;">`docker network connect NETWORK`</mark>
+
+attach a network to running container
+
+#### <mark style="color:purple;">`docker network disconnect NETWORK`</mark>
+
+detach a network to running container
 
 ## Docker Volume
 
